@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Gravity Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas" class="canvas"></canvas>
+    <div id="next-planet" class="next-planet yellow"></div>
+    <div id="cursor" class="cursor"></div>
+
+    <div id="mobile-ui" class="mobile-ui display-none">
+        <button type="button" id="clear-button" class="button">
+            <img src="icons/clear.svg" class="icon" alt="Clear map">
+        </button>
+
+        <button type="button" id="trails-button" class="button">
+            <img src="icons/trails-off.svg" id="trails-off" class="icon" alt="Turn off trails">
+            <img src="icons/trails-on.svg" id="trails-on" class="icon display-none" alt="Turn on trails">
+        </button>
+
+        <button type="button" id="pause-button" class="button">
+            <img src="icons/pause.svg" id="pause-icon" class="icon" alt="Pause">
+            <img src="icons/play.svg" id="play-icon" class="icon display-none" alt="Unpause">
+        </button>
+        
+        <input type="range" min="1" id="radius-slider" class="radius-slider">
+    </div>
+</body>
+</html>
